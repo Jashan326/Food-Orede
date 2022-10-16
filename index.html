@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>Food Website</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<!-- Bootstrap JS -->
+  	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="nav.css"> -->
+   <link rel="stylesheet" href="contus.css">
+   <link rel="stylesheet" href="crousal.css">
+   <link rel="stylesheet" href="gallery.css">
+   <link rel="stylesheet" href="footer.css">
+   <link rel="stylesheet" href="gallery2.css">
+   <link rel="stylesheet" href="testo.css">
+   <link rel="stylesheet" href="news.css">
+   <!-- <link rel="stylesheet" href="nav.css"> -->
+
+
+
+   <!-- aos -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+ <style>
+    * {
+    margin: 0px;
+    /* overflow-x: auto; */
+    padding: 0px;
+    box-sizing: border-box;
+    /* border:2px solid black ; */
+   
+}
+
+ </style>
+ <script>
+    function myfun(){
+        let a=document.querySelector('input').value;
+       // alert(a);
+       if(a=="payment")
+       {
+        let c=document.querySelector('#god');
+        c.href="#box3";
+       }
+       else if(a=="gallery"){
+        let c=document.querySelector('#god');
+        c.href="#box4";
+       }
+       else if(a=="home"){
+        let c=document.querySelector('#god');
+        c.href="#";
+       }
+       else if(a=="our menu"){
+        let c=document.querySelector('#god');
+        c.href="#box1";
+       }
+       else if(a=="contact us"){
+        let c=document.querySelector('#god');
+        c.href="#box2";
+       }
+       else{
+        alert(" please enter the valid serach")
+       }
+       
+
+    }
+ </script>
+</head>
+<body>
+
+<!-- NAVBAR START -->
+<!-- <nav style="overflow:hidden;" >
+    <ul style="margin-bottom: 0px;background-color: rgba(242, 48, 48, 0.625);">
+        <li>
+            <a href="#"><i class="fas fa-home"></i> <span>Home</span></a>
+        </li>
+        <li>
+            <a href="#"><i class="fab fa-servicestack"></i> <span>Services</span></a>
+        </li>
+        <li>
+            <a href="#"><i class="fas fa-address-card"></i> <span>About Us</span></a>
+        </li>
+        <li>
+            <a href="#"><i class="fas fa-address-book"></i> <span>Contact</span></a>
+        </li>        
+    </ul>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="#">MixFood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#box4">Gallery Section</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#box1">Our Menu</a></li>
+              <li><a class="dropdown-item" href="#box2">Contact Us</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#box3">Payment form</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#box5">customer review</a>
+        </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         
+          <button class="btn btn-outline-success" type="submit" onclick="myfun()">  <a href="#" id="god" style="text-decoration:none;color: black;">search</a> </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- NavBAR END  -->
+
+
+
+
+ <!-- ======= Header Slider Section ======= -->
+ <header id="header" >
+    <div id="headerCarousel" class="carousel slide carousel-fade" data-ride="carousel" >
+
+        <!-- Slide Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#headerCarousel" data-slide-to="1"></li>
+          <li data-target="#headerCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="https://png.pngtree.com/back_origin_pic/03/76/04/3501c87c15b231da1d258cc523656edb.jpg" alt="" style="width:100%"></div>
+            <div class="carousel-container">
+              <div class="carousel-content" data-aos="zoom-in-up">
+                <h2>Welcome to <span>Our Website</span></h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                <a href="#" class="contactus-btn"> Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="https://www.teahub.io/photos/full/19-191749_3840x2160-healthy-fibrous-foods-wallpaper-high-resolution-food.jpg" style="width:100%" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content" data-aos="zoom-in-up">
+                <h2>Why do we use it</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text.</p>
+                <a href="#" class="contactus-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?cs=srgb&dl=pexels-ella-olsson-1640777.jpg&fm=jpg" alt="" style="width:100%"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Where does it come from</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                <a href="#" class="contactus-btn">Contact Us</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+</div>        
+
+        <!-- Carousel pre and next arrow -->
+        <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+          <i class="fas fa-arrow-circle-left"></i>
+        </a>
+
+        <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+          <i class="fas fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</header><!-- End header -->
+
+
+
+
+
+
+
+
+<!-- OUR MENU -->
+
+<div style="color: white;" id="box1">
+    kdsmnklfdgsngkldf
+    <br>
+    dkjsnfkdsnfgkdnlk
+</div>
+<center>
+    <div class="why-us"  data-aos="zoom-in">
+    <h2 class="display-1 ">Our Menu</h2>
+    </div>
+ </center>
+<br>
+
+<!-- OUR MENU -->
+
+
+<div class="cards-list" data-aos="zoom-in">
+  
+    
+    <div class="cards 1" >
+      <div class="card_image">  <img src="https://tse1.mm.bing.net/th?id=OIP.F0wSkwfP1ODfH1-tLW9O4gHaD-&pid=Api&P=0" /> </div>
+      <div class="card_title title-white">
+        <p > <a href="North.html" style="text-decoration: none;color: azure;"> NORTH FOOD </a></p>
+      </div>
+    </div>
+    </a>
+    
+      <div class="cards 2" >
+      <div class="card_image">
+        <img src="https://baliindiancuisine.com/wp-content/uploads/2014/10/south-Indian-food.jpg" />
+        </div>
+      <div class="card_title title-white">
+        <p ><a href="South.html" style="text-decoration: none;color: azure;"> South FOOD </a></p>
+      </div>
+    </div>
+    
+    <div class="cards 3" >
+      <div class="card_image">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.UYJA3sHd33qLJQXM5hmMEQHaF7&pid=Api&P=0" />
+      </div>
+      <div class="card_title">
+        <p><a href="East.html" style="text-decoration: none;color: azure;"> East FOOD </a></p>
+      </div>
+    </div>
+      
+      <div class="cards 4" >
+      <div class="card_image">
+        <img src="https://cdn.vox-cdn.com/thumbor/H7BY0ljBVHUdgjXV9PGayOYJeT0=/0x0:960x718/2120x1413/filters:focal(415x232:567x384)/cdn.vox-cdn.com/uploads/chorus_image/image/62775580/BA4F2E0C_DC00_4E2D_9FE8_BA269EAF79D0.0.jpeg" />
+        </div>
+      <div class="card_title title-black">
+        <p><a href="west.html" style="text-decoration: none;color: azure;"> West FOOD </a></p>
+      </div>
+      </div>
+    
+    </div>
+      
+
+
+<br>
+
+<!-- our menu end -->
+
+
+
+
+<div id="box4" style="color: white;">
+dsjgkldsgjmkdfgndfklgmdf
+</div>
+<!-- Gallery  -->
+
+<div class="photoGallery bg-light why-us" >
+    <div class="container"  data-aos="zoom-in">
+        <center>
+        <h2 class=" display-2" style="color: black;" > Gallery section</h2>
+    </center>
+        <p class="text-center">Hover on image to zoom</p> 
+        <hr>      
+        <div class="gallery-columns">
+            <div class="row">
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="" class="thumbnail">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhh2apPaXr8gEKXomA8zFZxgsykD6lqTefZg&usqp=CAU" class="img-fluid" style="width: 100%;height:auto" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="" class="thumbnail">
+                        <img src="https://imgmedia.lbb.in/media/2019/08/5d662c8ea84656a7661be92a_1566977166741.jpg" style="width: 100%;height:auto" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4" >
+                    <a href="" class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1602253057119-44d745d9b860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlzaHxlbnwwfHwwfHw%3D&w=1000&q=80" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="" class="thumbnail">
+                        <img src="https://thumbs.dreamstime.com/b/indian-food-curry-meal-dishes-17901090.jpg" style="height: auto;width:100%" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="" class="thumbnail">
+                        <img src="https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=1200&format=pjpg&exif=1&iptc=1" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="" class="thumbnail">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.8kqnqtekYvhPqpxnkC_vtgHaEo&pid=Api&P=0" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- GAllery end -->
+
+<!-- sliddere -->
+<div id="box5">
+    <br>
+    <br>
+    <br>
+<section id="testimonial" class="bg-primary" >
+    <div class="container" >
+        <div class="row">
+            <div class="col-12" >
+                <h2>Customer Review</h2>
+            </div>
+            <div class="col-12">
+                <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Slide Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="https://tse4.mm.bing.net/th?id=OIP.4mcXvDzvkumTEYFdloU03AHaKd&pid=Api&P=0" alt="Testimonial Slider"></div>
+                                <h3>Rajnish Kumar <br><span>India</span></h3>
+                                <p class="col-md-8 offset-md-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="https://media.istockphoto.com/photos/handsome-black-man-portrait-picture-id538576630" alt="Testimonial Slider"></div>
+                                <h3>Rajnish Kumar <br><span>India</span></h3>
+                                <p class="col-md-8 offset-md-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="carousel-content">
+                                <div class="client-img"><img src="https://media.istockphoto.com/photos/handsome-black-man-portrait-picture-id538576630" alt="Testimonial Slider"></div>
+                                <h3>Rajnish Kumar <br><span>India</span></h3>
+                                <p class="col-md-8 offset-md-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English.</p>
+                            </div>
+                        </div>
+                        <!-- Slider pre and next arrow -->
+                        <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control-next text-white" href="#testimonialCarousel" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+	<!--  About  Why Us Section -->
+	<section class="why-us" data-aos="zoom-in-up">
+		<div class="container">
+	        <div class="row">
+				<div class="col-md-8 offset-md-2" >
+					<h2 class="mt-5 text-center display-1" >Why Choose Us</h2>
+					<!-- <p class="mb-5 text-center" >Why choose us section design HTML is created by using Bootstrap and custom HTML CSS. This our services section cards are more beautiful with pure CSS hover effects.</p> -->
+                    <br>
+                    <br>
+				</div>
+			</div>
+
+			<div class="row" >
+				<div class="col-sm-6 col-lg-4">
+					<div class="box" >
+						<span>01</span>
+						<h4><a href="#">Food Quality</a></h4>
+						<p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRkNmNX1iOEoAona7feTRqdXIMElMMqfxqw&usqp=CAU" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4" >
+					<div class="box">
+						<span>02</span>
+						<h4><a href="#">Taste</a></h4>
+						<p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLdzQmGSWn-4dWW6SpzT-YEEp1nTim-i25SwSYQ7s&s" alt=""style="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4" >
+					<div class="box">
+						<span>03</span>
+						<h4><a href="#">Fast delivery</a></h4>
+						<p>There are many variations of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="https://cdn3.vectorstock.com/i/1000x1000/28/82/food-delivery-vector-6252882.jpg" style=""alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4"  >
+					<div class="box">
+						<span>04</span>
+						<h4><a href="#">Budget friendly</a></h4>
+						<p>There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form</p>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStDyuTLpvn3EH_4djnNe3_oJzPEyyEzri2_6Ynqjex&s" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>05</span>
+						<h4><a href="#">24*7 Support</a></h4>
+						<p>There are many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="https://cdn2.vectorstock.com/i/1000x1000/37/16/24-7-support-sign-label-template-vector-3973716.jpg" style="height:255px ;"alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 ">
+					<div class="box">
+						<span>06</span>
+						<h4><a href="#">Trusted website</a></h4>
+						<p>There are variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+						<img src="trusted.png" style="height: 200px;width:320px ;"alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Why Us Section -->
+
+
+
+    <!-- Contact us -->
+
+
+<hr>
+<!-- <br> -->
+
+<div class="why-us" data-aos="fade-up"
+data-aos-duration="3000">
+    <center>
+    <h2 class="display-1">
+     Dishes To Be Added Soon
+    </h2>
+</center>
+
+</div>
+<br>
+
+<!-- Gallery   2 2   2  -->
+
+<div class="middle-section " >
+    <div class="post-thumb"  >
+        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2015/09/13587.jpg?quality=90&crop=385px,0px,1501px,1000px&resize=700,466" alt="" class="img-fluid" >
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+
+    <div class="post-thumb" >
+        <img src="https://tse2.mm.bing.net/th?id=OIP.Y1GVdFwsPSnvd6ynACSZZgHaE8&pid=Api&P=0" alt="" class="img-fluid" >
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+
+    <div class="post-thumb">
+        <img src="https://www.savoryexperiments.com/wp-content/uploads/2014/10/Slow-Cooker-Ragu.jpg" alt="" class="img-fluid">
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Whatever It Is - Always Awesome</p>
+        </div>
+    </div>
+
+    <div class="post-thumb">
+        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-04/17/14/campaign_images/146c3c83d80c/44-recipes-that-will-let-you-eat-around-the-world-2-115-1587134733-8_dblbig.jpg?resize=1200:*" class="img-fluid" alt="">
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+
+    <div class="post-thumb">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc64f3nmMjOUwbq_TXHGifuWMxzrDEKVcQ8ayZn3DZF-NKDl2FnglP0uCKKsmjK5vOiOA&usqp=CAU" style="height: auto;width:100%"   alt=""  >
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+
+    <div class="post-thumb">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2015/09/13587.jpg?quality=90&crop=385px,0px,1501px,1000px&resize=700,466"  class="img-fluid" alt="">
+        <div class="caption-text">
+            <h2>Arriving Soon</h2>
+            <p>Lorem Ipsum is simply dummy text</p>
+        </div>
+    </div>
+    
+</div>
+<!-- Gallery end -->
+<span style="color:white">shdfh </span>
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<center>
+<div class="why-us"  data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500" id="box2">
+
+    <h2 class="display-1" >
+        Contact Us
+    </h2>
+</div>
+
+</center>
+<br>
+<span style="color:white">shdfh </span>
+
+
+    <!-- Contact Us Section -->
+    
+    <section class="contact-us bg-light" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    
+                    <!-- <div class="section-title why-us">
+                        <br> <br>
+                
+                    
+                        <h2 class="display-1"> Contact Us</h2>
+                    <br>
+                   
+                     
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <form action="" class="mb-4 mb-lg-0">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Type Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark bg-dark "> <span style="color: white;">  Contact Now </span></button>
+                    </form>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571289.733943155!2d76.08560099999998!3d29.058775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4a4b98404f57%3A0x75ffae70833e8448!2sShahbad%2C%20Haryana%20136135!5e0!3m2!1sen!2sin!4v1594195370933!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Us Section -->
+
+
+
+    <hr>
+   
+    
+
+
+<div class="container py-5" id="box3">
+
+    <div class="row mb-4">
+        <div class="col-lg-8 mx-auto text-center why-us" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" >
+            <h2 class="display-1">Payment Form</h2>
+        </div>
+    </div> <!-- End -->
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        <!-- Credit card form tabs -->
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li>
+                        </ul>
+                    </div> <!-- End -->
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+                        <!-- credit card info-->
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                            <form role="form" onsubmit="event.preventDefault()">
+                                <div class="form-group"> <label for="username">
+                                        <h6>Card Owner</h6>
+                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>Card number</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                    <h6>Expiration Date</h6>
+                                                </span></label>
+                                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" required class="form-control"> </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                            </form>
+                        </div>
+                    </div> <!-- End -->
+                    <!-- Paypal info -->
+                    <div id="paypal" class="tab-pane fade pt-3">
+                        <h6 class="pb-2">Select your paypal account type</h6>
+                        <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+                        <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p>
+                        <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                    </div> <!-- End -->
+                    <!-- bank transfer info -->
+                    <div id="net-banking" class="tab-pane fade pt-3">
+                        <div class="form-group "> <label for="Select Your Bank">
+                                <h6>Select your Bank</h6>
+                            </label> <select class="form-control" id="ccmonth">
+                                <option value="" selected disabled>--Please select your Bank--</option>
+                                <option>Bank 1</option>
+                                <option>Bank 2</option>
+                                <option>Bank 3</option>
+                                <option>Bank 4</option>
+                                <option>Bank 5</option>
+                                <option>Bank 6</option>
+                                <option>Bank 7</option>
+                                <option>Bank 8</option>
+                                <option>Bank 9</option>
+                                <option>Bank 10</option>
+                            </select> </div>
+                        <div class="form-group">
+                            <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                        </div>
+                        <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+
+                    </div> <!-- End -->
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    </div>
+    
+<!-- Payment end -->
+
+
+
+<!-- Footer -->
+<footer >
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="address">
+                        <h3 style="overflow-x: hidden;">markuptag</h3>
+                        <p class="mb-4 mt-4">Shahabad Markanda, 136135, India</p>
+                        <p><strong>Phone:</strong> +91 8558020904</p>
+                        <p><strong>Email:</strong> markuptag20@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 footer-menus">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <a href="#">Home</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">About us</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Services</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 footer-menus">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <a href="#">Web Design</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Web Development</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Product Management</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Marketing</a></li>
+                        <li><i class="fas fa-check"></i> <a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="" method="post"><input type="email" name="email" /><input type="submit" value="Subscribe" /></form>
+
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mb-2">&copy; Copyright <strong>markuptag</strong>. All Rights Reserved</p>
+                    <p class="text-center mb-0">Created by <a href="https://www.markuptag.com/">markuptag</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+     
+
+
+
+
+    <!-- ANIMATION LIBRARY -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        offset: 200,
+        duration: 2000,
+    });
+    </script>
+
+</body>
+</html>
